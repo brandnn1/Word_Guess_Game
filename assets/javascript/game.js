@@ -286,6 +286,47 @@ function wordCheck(userGuess) {
      loserFunction();
      return;
    }
+   console.log (alreadyGuessed.length);
+   if (alreadyGuessed.length == 1){
+    document.getElementById("miss_0").style.visibility = "hidden";
+    document.getElementById("miss_1").style.visibility = "visible";
+   }
+   if (alreadyGuessed.length == 2){
+    document.getElementById("miss_1").style.visibility = "hidden";
+    document.getElementById("miss_2").style.visibility = "visible";
+   }
+   if (alreadyGuessed.length == 3){
+    document.getElementById("miss_2").style.visibility = "hidden";
+    document.getElementById("miss_3").style.visibility = "visible";
+   }
+   if (alreadyGuessed.length == 4){
+    document.getElementById("miss_3").style.visibility = "hidden";
+    document.getElementById("miss_4").style.visibility = "visible";
+   }
+   if (alreadyGuessed.length == 5){
+    document.getElementById("miss_4").style.visibility = "hidden";
+    document.getElementById("miss_5").style.visibility = "visible";
+   }
+   if (alreadyGuessed.length == 6){
+    document.getElementById("miss_5").style.visibility = "hidden";
+    document.getElementById("miss_6").style.visibility = "visible";
+   }
+   if (alreadyGuessed.length == 7){
+    document.getElementById("miss_6").style.visibility = "hidden";
+    document.getElementById("miss_7").style.visibility = "visible";
+   }
+   if (alreadyGuessed.length == 8){
+    document.getElementById("miss_7").style.visibility = "hidden";
+    document.getElementById("miss_8").style.visibility = "visible";
+   }
+   if (alreadyGuessed.length == 9){
+    document.getElementById("miss_8").style.visibility = "hidden";
+    document.getElementById("miss_9").style.visibility = "visible";
+   }
+   if (alreadyGuessed.length == 10){
+    document.getElementById("miss_9").style.visibility = "hidden";
+    document.getElementById("miss_10").style.visibility = "visible";
+   }
   }
 
   function guessesRemainingFunction() {
@@ -296,7 +337,7 @@ function wordCheck(userGuess) {
     document.getElementById("already-guessed").innerHTML = alreadyGuessed;
   }
 
-
+ 
   document.getElementById("current-word").innerHTML = playSpace;
 
 //functions for creating underscores and spaces between the underscores
@@ -357,6 +398,15 @@ function drawSpace() {
    document.getElementById("miss_0").style.visibility = "visible";
    document.getElementById("miss_1").style.visibility = "hidden";
    document.getElementById("miss_2").style.visibility = "hidden";
+   document.getElementById("miss_3").style.visibility = "hidden";
+   document.getElementById("miss_4").style.visibility = "hidden";
+   document.getElementById("miss_5").style.visibility = "hidden";
+   document.getElementById("miss_6").style.visibility = "hidden";
+   document.getElementById("miss_7").style.visibility = "hidden";
+   document.getElementById("miss_8").style.visibility = "hidden";
+   document.getElementById("miss_9").style.visibility = "hidden";
+   document.getElementById("miss_10").style.visibility = "hidden";
+   document.getElementById("miss_11").style.visibility = "hidden";
    document.getElementById("resultTextChange").innerHTML = "";
    alreadyGuessed.length = 0;
    alreadyGuessedFunction();
