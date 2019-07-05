@@ -414,7 +414,7 @@ function drawSpace() {
    document.getElementById("startDialog").style.visibility = "visible";
    alreadyGuessed.length = 0;
    alreadyGuessedFunction();
-   guessesRemaining = 12;
+   guessesRemaining = 11;
    guessesRemainingFunction();
    wordChoice = wordArray[Math.floor(Math.random() * wordArray.length)];
    console.log(wordChoice);
