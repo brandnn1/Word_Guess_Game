@@ -1,6 +1,6 @@
 //Initial Variables
 var wins = 0;
-var guessesRemaining = 12;
+var guessesRemaining = 11;
 var gameFinished = false;
 
 //Computer Choice Array:
