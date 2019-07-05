@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Special+Elite|DM+Serif+Display&display=swap" rel="stylesheet">
     <title>Hangman Game</title>
     <!-- Bootstrap CSS -->
       </head>
   <body>
       <div class="header">
-      <div id="hangmanTitle">Hangman Game</div>
+      <div id="hangmanTitle">HANGMAN</div>
     </div>
-    <div class="resultText">
-      <p id="resultTextChange"></p>
-    </div>
+
     <div id = "bodyFamily">
+  <div class = "container1">
+      <img src="./assets/images/Win.PNG" alt="You Win!" id="winwin">
+      <img src="./assets/images/Lose.PNG" alt="You Lose!!!" id="loselose">
     <div class="leftGrid fullGrid" id="image-place">
       <img src="./assets/images/Body0.png" alt="The Start" id = "miss_0" style="position: absolute;">
       <img src="./assets/images/Body1.png" alt="1 Miss" id="miss_1">
@@ -34,19 +35,22 @@
       <img src="./assets/images/Body10.png" alt="10 Miss" id="miss_10">
       <img src="./assets/images/Body11.png" alt="11 Miss" id="miss_11">
     </div>
+
     <div class="rightGrid fullGrid">
       <div class="gridText">
-        <p>Press Any Key to Begin!</p>
-        <p>Wins</p>
-        <p id="total-wins">0</p>
-        <p>Current Word</p>
-        <p id="current-word"></p>
+        <p id="startDialog">Press Any Key to Begin!</p>
         <p>Number of Guesses Remaining</p>
         <p id="guesses-remaining"></p>
+        <p>Current Word</p>
+        <p id="current-word"></p>
         <p>Letters Already Guessed</p>
         <p id="already-guessed"></p>
+        <br>
+        <p>Wins</p>
+        <p id="total-wins">0</p>
       </div>
     </div>
+</div>
 </div>
 <script src="./assets/javascript/game.js"></script>
     <!-- Optional JavaScript -->
