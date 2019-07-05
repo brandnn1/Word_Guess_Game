@@ -57,13 +57,13 @@
 
   .rightGrid {
     float: left;
-    margin-left: 15px;
+    margin-left: 45px;
   }
 
   .leftGrid {
     float:left;
    }
-   
+
   .gridText {
     font-family: 'Special Elite', cursive;
     text-align: center;
