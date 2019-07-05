@@ -1,10 +1,14 @@
-body {
-    background-color: white;
-  }
+   body { 
+        background: url(../images/background.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
   
   #hangmanTitle {
     margin-top: 10px;
-    margin-left: 600px;
+    margin-left: 40%;
     font-family: 'Luckiest Guy', cursive;
     font-size: 60px;
     color: #800020;
@@ -23,7 +27,7 @@ body {
 }
 #winwin {
     position: absolute;
-    left: 15%;
+    left: 0%;
     visibility: hidden;
     animation: blink 1s;
     animation-iteration-count: infinite;
@@ -31,34 +35,35 @@ body {
 }
 #loselose {
     position: absolute;
-    left: 14%;
+    left: -3%;
     visibility: hidden;
     animation: blink 1s;
     animation-iteration-count: infinite;
     z-index: 15;
 }
 
-
-
-  .fullGrid {
+    .wrapper1 {
     height: 750px;
-    width: 450px;
+    width: 900px;
     margin-top: 20px;
     margin-bottom: 100px;
     border: 2px dashed #800020;
-  }
+    background-color: white;
+        
+    }
+
   
-  .leftGrid {
-    float: left;
-    margin-left: 280px;
-  }
+
 
   .rightGrid {
     float: left;
-    border-left: none;
-    margin-left: 5px;
+    margin-left: 15px;
   }
-  
+
+  .leftGrid {
+    float:left;
+   }
+   
   .gridText {
     font-family: 'Special Elite', cursive;
     text-align: center;
@@ -69,6 +74,7 @@ body {
   
   #bodyFamily {
     position: relative;
+    left:25%;
   }
   
   .answerImage {
@@ -76,6 +82,11 @@ body {
     visibility: hidden;
   }
   
+  #miss_0 {
+    position: absolute;
+    z-index: 1;
+    visibility: visible;
+  }
 
   #miss_1 {
     position: absolute;

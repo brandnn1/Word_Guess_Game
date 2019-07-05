@@ -397,6 +397,7 @@ function drawSpace() {
  }
 
  function resetFunction() {
+   document.getElementById("startDialog").style.visibility = "visible";
    document.getElementById("bodyFamily").style.visibility = "visible";
    document.getElementById("miss_0").style.visibility = "visible";
    document.getElementById("miss_1").style.visibility = "hidden";
@@ -412,7 +413,7 @@ function drawSpace() {
    document.getElementById("miss_11").style.visibility = "hidden";
    document.getElementById("winwin").style.visibility = "hidden";
    document.getElementById("loselose").style.visibility = "hidden";
-   document.getElementById("startDialog").style.visibility = "visible";
+
    alreadyGuessed.length = 0;
    alreadyGuessedFunction();
    guessesRemaining = 11;
