@@ -288,7 +288,8 @@ function wordCheck(userGuess) {
      return;
    }
 
-   //changes the displayed picture when an incorrect guess is given
+   //changes the displayed picture when an incorrect guess is given. I could have just changed the pictures to all visible since each id has a different z-index but 
+   //I wanted the code to be cleaner. 
    if (alreadyGuessed.length == 1){
     document.getElementById("miss_0").style.visibility = "hidden";
     document.getElementById("miss_1").style.visibility = "visible";
