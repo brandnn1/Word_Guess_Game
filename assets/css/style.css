@@ -12,6 +12,7 @@
     font-family: 'Luckiest Guy', cursive;
     font-size: 60px;
     color: #800020;
+    text-shadow: 3px 3px white;
   }
   
   @keyframes blink {
